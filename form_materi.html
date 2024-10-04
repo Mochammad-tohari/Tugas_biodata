@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi Form</title>
+  </head>
+
+  <body>
+    <!-- tag <nav></nav> terletak di header page-->
+
+    <nav>
+      <a href="Index.html">Home</a>
+      <a href="font.html">Font</a>
+      <a href="halaman_favorit.html">Halaman Favorit</a>
+    </nav>
+
+    <!-- tag <section></section> konten dari web-->
+    <section>
+      <h1>Form Registrasi Lamaran Kerja</h1>
+
+      <!-- <fieldset> mengelompokan form
+        <legend>Formulir</legend> memberi judul form -->
+      <fieldset>
+        <legend>Formulir</legend>
+        <!-- Tag <form action="#"> menandakan sebuah awal dari formulir  -->
+        <form action="data_saya.html" method="POST">
+          <!--  <input
+            type="text"> memberikan inputan bertipe text -->
+          <div>
+            <label for="Username">Nama</label><br />
+            <input
+              type="text"
+              id="Username"
+              name="Username"
+              placeholder="Username"
+            />
+          </div>
+          <br />
+
+          <!--  <input
+            type="Email"> memberikan inputan bertipe Email -->
+          <div>
+            <label for="Email">Alamat Email</label><br />
+            <input type="email" id="Email" name="Email" placeholder="Email" />
+          </div>
+          <br />
+
+          <!--  <input
+            type="text"> memberikan inputan bertipe text -->
+          <div>
+            <label for="Kontak">Nama</label><br />
+            <input type="text" id="Kontak" name="Kontak" placeholder="Kontak" />
+          </div>
+          <br />
+
+          <!--  <input
+            type="radio"> memberikan inputan bertipe radio yang harus di isi salah satu-->
+          <div>
+            <label for="Gender">Gender</label> <br />
+            <input
+              type="radio"
+              id="GenderPria"
+              name="Gender"
+              value="Pria"
+              checked
+            />
+            Pria
+            <input
+              type="radio"
+              id="GenderWanita"
+              name="Gender"
+              value="Wanita"
+            />
+            Wanita
+          </div>
+          <br />
+
+          <!--  <input
+            type="checkbox"> memberikan inputan bertipe checkbox yang bisa diisi keduanya-->
+          <div>
+            <label for="Hoby">Hobi</label> <br />
+
+            <label for="">
+              <input type="checkbox" name="Makan" value="makan" checked />
+              Makan
+            </label>
+
+            <label for="">
+              <input type="checkbox" name="Tidur" value="tidur" />
+              Tidur
+            </label>
+          </div>
+          <br />
+
+          <!-- select name="Pendidikan" id="Pendidikan">
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option> memberikan inputan bertipe combo box yang bisa dipilih salah satu-->
+          <div>
+            <label for="Tingkat Pendidikan">Tingkat Pendidikan</label> <br />
+            <select name="Pendidikan" id="Pendidikan">
+              <option value="SD">SD</option>
+              <option value="SMP">SMP</option>
+              <option value="SMA/SMK">SMA/SMK</option>
+              <option value="S1">S1</option>
+              <option value="S2">S2</option>
+              <option value="S3">S3</option>
+            </select>
+          </div>
+
+          <div>
+            <button type="submit">submit</button>
+          </div>
+          <br />
+        </form>
+      </fieldset>
+    </section>
+
+    <!-- tag <footer></footer> bagian bawah web -->
+    <footer>2024 &copy; Mochammad Tohari <sup>TM</sup></footer>
+  </body>
+</html>
