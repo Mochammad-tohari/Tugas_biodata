@@ -14,7 +14,21 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+
+        .form-input{
+        background-color: red;
+    }
+
+    /* .form-input{} pemangggilan class*/
+
+    #Username{
+        background-color: green;
+    }
+
+    /* #Username{} pemanggilan id*/
     </style>
+
+   
 
 </head>
 
@@ -163,6 +177,49 @@
             <dt>Judul 4</dt>
             <dd>Deskripsi 4</dd>
          </dl>
+
+    <!-- Form dan Input -->
+    <h1 align="center">Form</h1>
+
+    <form action="#">
+
+        <div>
+            <label for="Username">Input Username</label>
+            <input type="text" placeholder="Username" name="Username" id="Username" value="Buah" readonly>
+        </div>
+        
+        <input type="number" placeholder="Input Number" class="form-input" value="30" disabled>
+        <input type="password" placeholder="Password" class="form-input" style="width: 200px;" maxlength="4" required>
+        <!-- maxlength="4" atau minlength="4" untuk membatasi jumlah masukan--> 
+         <!-- required berarti wajib harus di isi -->
+        <input type="date" placeholder="pilih tanggal">
+
+        <textarea name="textarea_1" id="textarea_1" placeholder="Alamat"></textarea>
+
+        <input type="file" multiple>
+        <!-- multiple berfungsi utk memilih lebih dari 1 file -->
+
+        <select name="select_1" id="select_1">
+            <option value="">opsi 1</option>
+            <option value="">opsi 2</option>
+            <option value="">opsi 3</option>
+            <option value="">opsi 4</option>
+        </select>
+
+        <input list="datalist_1" name="datalist_1">
+        <datalist name="datalist_1" id="datalist_1">
+            <option value="opsi 1">
+            <option value="opsi 2">
+            <option value="opsi 3">
+            <option value="opsi 4">
+        </datalist>
+
+        <button type="reset">reset</button>
+        <button type="button">button</button>
+        <button type="submit">submit</button>
+
+    </form>
+
 
 </body>
 
